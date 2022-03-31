@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "340088029268",
+    "project_id": "my-facebook-login-46016",
+    "storage_bucket": "my-facebook-login-46016.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340088029268:android:06a98cdb6a98c31158adc1",
+        "android_client_info": {
+          "package_name": "com.example.another_facebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340088029268-hu8qr88ejh7dl4vom1i2p7iu6bbckn3g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxYHPAJAEEzCoGUW0NOLYfQ7OaO-nGWcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340088029268-hu8qr88ejh7dl4vom1i2p7iu6bbckn3g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340088029268:android:69fd0debe6da996f58adc1",
+        "android_client_info": {
+          "package_name": "com.example.firebase_auth_practise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340088029268-v6n3sir63k7s9vkvacpe5nd2pru9cd1c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebase_auth_practise",
+            "certificate_hash": "6b9dbd803b5c1e2549a0d3e6803ea9746684624c"
+          }
+        },
+        {
+          "client_id": "340088029268-hu8qr88ejh7dl4vom1i2p7iu6bbckn3g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxYHPAJAEEzCoGUW0NOLYfQ7OaO-nGWcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340088029268-hu8qr88ejh7dl4vom1i2p7iu6bbckn3g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
