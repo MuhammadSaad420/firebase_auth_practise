@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_auth_practise/signup.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class Login extends StatelessWidget {
   Login({Key? key}) : super(key: key);
@@ -32,9 +33,29 @@ class Login extends StatelessWidget {
                       .signInWithEmailAndPassword(
                           email: _emailTextEditingController.text.trim(),
                           password: _passwordTextEditingController.text);
-                          
                 },
                 icon: Icon(Icons.login)),
+            GestureDetector(
+                onTap: () async {
+                  final GoogleSignInAccount? googleUser =
+                      await GoogleSignIn().signIn();
+
+                  // Obtain the auth details from the request
+                  final GoogleSignInAuthentication? googleAuth =
+                      await googleUser?.authentication;
+
+                  // Create a new credential
+                  final credential = GoogleAuthProvider.credential(
+                    accessToken: googleAuth?.accessToken,
+                    idToken: googleAuth?.idToken,
+                  );
+                  UserCredential userCredential = await FirebaseAuth.instance
+                      .signInWithCredential(credential);
+                  print(userCredential.user!.displayName);
+                },
+                child: Container(
+                  child: Text("Google SignIn"),
+                ))
           ],
         ),
       ),
